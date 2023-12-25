@@ -1,8 +1,10 @@
-from libraries import *
+import sys
+sys.path.append("../")
+from libraries.libraries import *
 
 base_url = ["https://www.pcb.com.pk/players.php?pg=1&ipp=100&&new_page_limit=100"]
 page_url = ["https://www.pcb.com.pk/players.php?pg={}&ipp=100&&new_page_limit=100"]
-file_path = list(os.getcwd() + "/temp/" + "playertable.csv")
+file_path = os.getcwd() + "/temp/" + "playertable.csv"
 
 player_ids = []
 player_names = []
@@ -96,4 +98,4 @@ class generatingCsv():
 
 
 gettingData.dataFetch(base_url[0])
-generatingCsv.checkCsv(file_path[0])
+generatingCsv.checkCsv(file_path)
