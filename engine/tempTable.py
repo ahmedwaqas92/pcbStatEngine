@@ -66,7 +66,7 @@ class gettingData():
 				# 	total_records = []
 
 				# 	for match_type in match_types:
-				# 		for a_tag in soup.find_all("a", string=match_type):
+				# 		for a_tag in soup.find_all("a", string	=match_type):
 				# 			format_link = a_tag["href"]
 
 				# 			raw_data = requests.get(format_link)
